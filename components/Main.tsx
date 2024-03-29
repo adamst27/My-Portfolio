@@ -2,8 +2,8 @@ import { SparklesCore } from "@components/ui/sparkles";
 import { Meteors } from "@components/ui/meteors";
 const Main = () => {
   return (
-    <main className="overflow-hidden relative">
-      <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden">
+    <main className="overflow-hidden relative h-screen bg-black">
+      <div className="h-[40rem] xl:h-[50rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden">
         <Meteors number={20} />
         <h1 className="md:text-8xl text-6xl lg:text-9xl font-bold text-center text-white text-stroke relative z-20">
           Design, Code, Deploy.

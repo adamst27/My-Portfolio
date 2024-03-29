@@ -39,7 +39,7 @@ const Skill = () => {
           >
             <Image
               src={skill.image_url}
-              alt={skill.name}
+              alt={"Skill Image"}
               width={48}
               height={48}
             />

@@ -14,7 +14,7 @@ const page = () => {
               What can i do
             </h2>
           </div>
-          <div className="scrollable overflow-hidden">
+          <div className="scrollable overflow-x-hidden">
             <InfiniteMovingCards
               items={services}
               direction="right"
