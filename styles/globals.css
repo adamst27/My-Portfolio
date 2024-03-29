@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .scrollable {
+    @apply opacity-0 translate-y-2 transition-all duration-1000;
+  }
+  .show {
+    @apply opacity-100 translate-y-0;
+  }
+  .contact-form {
+    @apply bg-black border-white border-2 rounded;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    @apply bg-black border-gray-500 hover:border-white focus:border-white rounded-md border-[2px] px-8 py-2 m-2;
+  }
+}
