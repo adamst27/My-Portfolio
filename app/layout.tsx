@@ -1,5 +1,4 @@
 import Nav from "@/components/Nav";
-import Banner from "@components/Banner";
 import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 
@@ -12,10 +11,9 @@ export const metadata = {
 const layout = ({ children }: any) => {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} overflow-x-hidden`}>
+      <body className={`${montserrat.className} overflow-x-hidden bg-black`}>
         <Nav />
         {children}
-        <Banner />
       </body>
     </html>
   );

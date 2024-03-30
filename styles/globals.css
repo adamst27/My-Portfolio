@@ -16,4 +16,11 @@
   .contact-form textarea {
     @apply bg-black border-gray-500 hover:border-white focus:border-white rounded-md border-[2px] px-8 py-2 m-2;
   }
+  .call-to-action-heading {
+    text-shadow: 0px 1px 2px rgba(143, 62, 255, 0.5);
+  }
+  .about-btn {
+    @apply px-4 py-2 m-2 border-white border-[1px] rounded hover:bg-white hover:text-black transition duration-500;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255);
+  }
 }

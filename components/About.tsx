@@ -36,17 +36,11 @@ const About = () => {
               technologies, and finding innovative solutions to real-world
               problems.
             </p>
-            <div className="row my-4">
-              <Link
-                href={"/projects"}
-                className="px-4 py-2 m-2 border-white border-[1px] rounded-full hover:bg-white hover:text-black transition duration-500"
-              >
+            <div className="row my-8">
+              <Link href={"/projects"} className="about-btn">
                 Projects
               </Link>
-              <Link
-                href={"/contact"}
-                className="px-4 py-2 m-2 border-white border-[1px] rounded-full hover:bg-white hover:text-black transition duration-500"
-              >
+              <Link href={"/contact"} className="about-btn">
                 Contact Me
               </Link>
             </div>

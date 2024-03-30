@@ -35,13 +35,14 @@ const Skill = () => {
         {skills.map((skill: any) => (
           <div
             key={skill.id}
-            className="p-4 m-2 shadow-inner rounded-full bg-white"
+            className="p-4 m-2 shadow-inner rounded bg-black border  border-slate-700"
           >
             <Image
               src={skill.image_url}
               alt={"Skill Image"}
               width={48}
               height={48}
+              className="filter  invert grayscale"
             />
           </div>
         ))}
