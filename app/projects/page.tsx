@@ -11,7 +11,7 @@ const Projects = () => {
       setProjects(data);
     };
     fetchSkills();
-  }, [projects]);
+  }, []);
   return (
     <section className="w-full bg-black pt-28">
       {projects.map((project: any) => (
@@ -19,10 +19,15 @@ const Projects = () => {
           key={project.id}
           title={project.title}
           description={project.description}
-          project_url={project.project_url}
+          project_url={project.project_link}
           image_url={project.image_url}
         />
       ))}
+      <div className="text-center text-white my-10">
+        <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-6xl/none text-white">
+          ... More To Come
+        </h3>
+      </div>
     </section>
   );
 };

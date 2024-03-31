@@ -29,7 +29,7 @@ const About = () => {
           <div className="my-4 scrollable">
             <h3 className="text-2xl font-bold tracking-tight">Who am I?</h3>
             <p className="text-gray-300 md:text-lg lg:text-base/relaxed xl:text-lg my-4">
-              my name is Adam. I&apos;m a passionate learner and an aspiring
+              My name is Adam. I&apos;m a passionate learner and an aspiring
               developer who loves to take on new challenges. My journey in the
               tech industry has been nothing short of exciting. I&apos;m always
               eager to dive into the world of coding, exploring new
