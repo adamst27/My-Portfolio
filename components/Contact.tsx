@@ -1,7 +1,20 @@
 "use client";
-import React, { useState } from "react";
-import useRouter from "next/navigation";
+import React, { useState, useEffect } from "react";
 const Contact = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".scrollable");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,8 +52,8 @@ const Contact = () => {
   };
   return (
     <section className="w-full py-6 md:py-12 lg:py-16 bg-black">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 text-center my-16 md:px-6">
-        <div className="space-y-2 scrollable">
+      <div className="container mx-auto scrollable flex flex-col items-center justify-center gap-4 px-4 text-center my-16 md:px-6">
+        <div className="space-y-2">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-6xl/none text-white">
             CONTACT
           </h2>

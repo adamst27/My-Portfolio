@@ -1,12 +1,26 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Project = (props: any) => {
-  console.log(props);
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".scrollable");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, []);
   return (
     <>
-      <div className="w-3/4 rounded-lg shadow-md overflow-hidden border border-slate-700 bg-black flex flex-col mx-auto justify-center items-center md:flex-row md:items-center gap-8 p-6 space-y-6 mt-8">
+      <div className="w-3/4 rounded-lg shadow-md overflow-hidden border scrollable border-slate-700 bg-black flex flex-col mx-auto justify-center items-center md:flex-row md:items-center gap-8 p-6 space-y-6 mt-8">
         <Image
           src={props.image_url}
           alt={props.title}
