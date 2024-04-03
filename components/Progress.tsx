@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const Progress = () => {
   useEffect(() => {
     const handleScroll = () => {
-      const progress: HTMLSpanElement =
+      const progress: HTMLSpanElement | null =
         document.querySelector(".filled-progress");
       if (progress) {
         const scrollPercent =
