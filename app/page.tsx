@@ -138,7 +138,7 @@ const page = () => {
       </section>
       <section className="relative overflow-hidden bg-black">
         <div className="call-to-action flex flex-col items-center justify-center h-screen px-8">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl p-2 lg:text-6xl text-white call-to-action-heading">
+          <h2 className="text-xl font-bold tracking-tighter sm:text-4xl p-2 lg:text-6xl text-white call-to-action-heading">
             Let&apos;s work together
           </h2>
           <Link
