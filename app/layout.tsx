@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import Progress from "@components/Progress";
 import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 
@@ -12,6 +13,7 @@ const layout = ({ children }: any) => {
   return (
     <html lang="en">
       <body className={`${montserrat.className} overflow-x-hidden bg-black`}>
+        <Progress />
         <Nav />
         {children}
       </body>
