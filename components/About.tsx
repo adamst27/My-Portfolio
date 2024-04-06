@@ -18,7 +18,7 @@ const About = () => {
     hiddenElements.forEach((el) => observer.observe(el));
   }, []);
   return (
-    <section className="w-full py-6 md:py-12 lg:py-16 bg-black">
+    <section className="w-full py-6 md:py-12 lg:py-16">
       <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6 mt-28">
         <div className="space-y-2 scrollable">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-6xl/none text-white">

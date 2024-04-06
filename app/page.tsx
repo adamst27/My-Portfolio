@@ -6,8 +6,8 @@ import About from "@components/About";
 const page = () => {
   return (
     <>
-      <main className="overflow-hidden relative h-screen bg-black">
-        <div className="w-full h-full bg-black flex flex-col items-center justify-center overflow-hidden">
+      <main className="overflow-hidden relative h-screen">
+        <div className="w-full h-full flex flex-col bg-black items-center justify-center overflow-hidden">
           <Meteors number={20} />
           <h1 className="md:text-8xl text-6xl lg:text-9xl font-bold text-center text-white text-stroke relative z-20">
             Design, Code, Deploy.
@@ -113,7 +113,7 @@ const page = () => {
         </div>
       </main>
       <About />
-      <section className="w-full py-6 md:py-12 lg:py-16 bg-black">
+      <section className="w-full py-6 md:py-12 lg:py-16">
         <div className="mx-auto flex flex-col items-center justify-center px-4 text-center md:px-6">
           <div className="space-y-2 scrollable">
             <h2 className="text-3xl font-bold tracking-tighter mb-3 sm:text-4xl lg:text-6xl/none text-white">
@@ -136,14 +136,14 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-black">
+      <section className="relative overflow-hidden">
         <div className="call-to-action flex flex-col items-center justify-center h-screen px-8">
           <h2 className="text-xl font-bold tracking-tighter sm:text-4xl p-2 lg:text-6xl text-white call-to-action-heading">
             Let&apos;s work together
           </h2>
           <Link
             href="/contact"
-            className="mt-8 inline-flex gap-2 z-10 items-center px-4 py-2 bg-violet-600 hover:bg-opacity-75 text-white font-bold rounded-full shadow-md"
+            className="mt-8 inline-flex gap-2 z-10 items-center px-2 py-1 md:px-4 md:py-2 bg-violet-600 hover:bg-opacity-75 text-white font-bold rounded-full shadow-md"
           >
             Get Started
             <svg

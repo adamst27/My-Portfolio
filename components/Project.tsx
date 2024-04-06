@@ -20,7 +20,7 @@ const Project = (props: any) => {
   }, []);
   return (
     <>
-      <div className="w-3/4 rounded-lg shadow-md overflow-hidden border scrollable border-slate-700 bg-black flex flex-col mx-auto justify-center items-center md:flex-row md:items-center gap-8 p-6 space-y-6 mt-8">
+      <div className="w-3/4 rounded-lg shadow-md overflow-hidden border scrollable border-slate-700 flex flex-col mx-auto justify-center items-center md:flex-row md:items-center gap-8 p-6 space-y-6 mt-8">
         <Image
           src={props.image_url}
           alt={props.title}

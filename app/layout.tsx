@@ -12,7 +12,9 @@ export const metadata = {
 const layout = ({ children }: any) => {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} overflow-x-hidden bg-black`}>
+      <body
+        className={`${montserrat.className} overflow-x-hidden bg-[hsl(255,40%,4%)]`}
+      >
         <Progress />
         <Nav />
         {children}

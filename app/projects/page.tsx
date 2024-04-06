@@ -13,7 +13,7 @@ const Projects = () => {
     fetchSkills();
   }, []);
   return (
-    <section className="w-full bg-black pt-28">
+    <section className="w-full pt-28">
       {projects.map((project: any) => (
         <Project
           key={project.id}
